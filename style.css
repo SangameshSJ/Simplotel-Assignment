@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.logo1 img{
+    height: 65px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav a{
+    color: black;
+}
+
+.nav1{
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    width: auto;
+    list-style: none;
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size:1.4rem;
+}
+
+.logo2{
+    width: 4%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.logo3{
+    width: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.l1{
+    width: 30px;
+    height: auto;
+}
+.l2{
+    width: 30px;
+    height: auto;
+}
+
+/* main 1 */
+
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+    display: block; 
+}
+
+.image .lorem{
+    width: 30vw;
+    height: 60px;
+    background-image: linear-gradient(90deg, black, rgba(163, 161, 161, 0.701));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.image .lorem h1{
+    width: max-content;
+}
+
+/* main 2 */
+
+.image {
+    flex: 1 1 100%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text{
+    background-color: rgb(211, 210, 210);
+    padding: 3rem;
+    display: flex;
+    flex: 1 1 60%;
+}
+
+.text1{
+    padding: 1rem;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    word-spacing: 0.3rem;
+}
+
+.color{
+    background-color: rgba(214, 211, 211, 0.541);
+}
+
+.color h1{
+    padding: 20px;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card1{
+    width: 300px;
+    height: auto;
+}
+h2{
+    padding: 1rem;
+    margin-left: 90px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+
+@media all and (min-width: 481px) and (max-width:768px) {
+    .nav{
+        margin: 0;
+    }
+    .nav li{
+        font-size: 80%;
+    }
+    .l1{
+        margin-left: -40px;
+    }
+
+    .navbar img {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+    }
+
+    .image {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .image .lorem{
+        width: 30vw;
+        left: 20px;
+        bottom: 30px;
+    }
+    .text {
+        padding: 10px;
+        flex: 1 1 100%;
+        margin-right: 0; 
+    }
+
+    .card1 {
+        padding: 0 10px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width:480px) {
+    .logo1 img{
+        width: 45px;
+        height: auto;
+    }
+
+    .navbar .nav1{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav li{
+        margin: 3px;
+        font-size: xx-small;
+    }
+    
+    .logo2 .l1,.l2{
+        width: 12px;
+        margin: 5px;
+    }
+    .logo2 .l1{
+        margin-right: 10px;
+    }
+
+    .nav li{
+        font-size: 70%;
+    }
+
+    .l1{
+        margin: 0;
+    }
+
+    .headLine h1, h2{
+        font-size: 95%;
+    }
+
+    .text{
+        margin: 0;
+        padding: 0;
+    }
+
+    .text p{
+        font-size: 40%;
+    } 
+    .card{
+        display: block;
+    }
+    .card1 {
+        margin-top: 10px;
+        padding: 0 10px;
+        width: 100%;
+    }
+    .card1 h2{
+        margin: 0 40%;
+    }
+    .card1 button{
+
+        margin: 10px 35%;
+        width: 30%;
+    }
+    .image .lorem {
+        font-size: 11px;
+        width: 30%;
+        height: 20%;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .lorem h1 {
+        font-size: 18px;
+    }
+}
